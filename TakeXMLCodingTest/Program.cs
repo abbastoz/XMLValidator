@@ -34,8 +34,8 @@ namespace TakeXMLCodingTest
            
             for (var i = 0; i < xml.Length; i++)
             {
-                if (xml[i] == ' ') continue;
-              
+                if (xml[i] == ' ') continue;              
+
                     if (xml[i] == '<')
                     {
                         var next = xml.IndexOf('>', i + 1);
