@@ -19,12 +19,12 @@ namespace TakeXMLCodingTest
 			string exampleThird = "<People><Design><Code>hello world</People></Code></Design>";
 			string exampleFourth = "<People age=”1”>hello world</People>";
 
-			Console.WriteLine("Example  :" + DetermineXml(example));
-			Console.WriteLine("Example2 :" + DetermineXml(example2));
-			Console.WriteLine("Example 1:" + DetermineXml(exampleFirst));
-			Console.WriteLine("Example 2:" + DetermineXml(exampleSecond));
-			Console.WriteLine("Example 3:" + DetermineXml(exampleThird));
-			Console.WriteLine("Example 4:" + DetermineXml(exampleFourth));
+			Console.WriteLine(example + " is a valid XML :" + DetermineXml(example));
+			Console.WriteLine(example2 + " is a valid XML :" + DetermineXml(example2));
+			Console.WriteLine(exampleFirst+ " is a valid XML :" + DetermineXml(exampleFirst));
+			Console.WriteLine(exampleSecond + " is a valid XML :" + DetermineXml(exampleSecond));
+			Console.WriteLine(exampleThird+ " is a valid XML :" + DetermineXml(exampleThird));
+			Console.WriteLine(exampleFourth + " is a valid XML :" + DetermineXml(exampleFourth));
 			Console.ReadKey();
         }
         public static bool DetermineXml(string xml)
